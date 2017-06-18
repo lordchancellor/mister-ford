@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mf';
+  open: boolean;
+
+  ngOnInit() {
+    this.open = false;
+  }
+
+  toggleMenu() {
+    this.open = !this.open;
+  }
 }
