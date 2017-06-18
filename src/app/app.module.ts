@@ -7,11 +7,13 @@ import 'hammerjs';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
+import { MenuButtonComponent } from './components/menu-button/menu-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomePageComponent
+    HomePageComponent,
+    MenuButtonComponent
   ],
   imports: [
     BrowserModule,
