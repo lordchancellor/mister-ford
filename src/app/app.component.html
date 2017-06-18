@@ -1,10 +1,24 @@
 <section class="app flex-container" fxLayout="column" fxLayoutAlign="start stretch">
   <md-sidenav-container fxFlex>
-    <md-sidenav mode="side" align="start" class="mat-elevation-z6" [opened]="open">
-      Links
+    <md-sidenav mode="over" align="start" class="mat-elevation-z6" [opened]="open">
+      <div class="navHeader">
+        <h3>Menu</h3>
+        <button md-fab (click)="toggleMenu()">
+          <md-icon>close</md-icon>
+        </button>
+      </div>
+
+      <hr>
+
+      <md-list>
+        <md-list-item>Home</md-list-item>
+        <md-list-item>About</md-list-item>
+        <md-list-item>Projects</md-list-item>
+        <md-list-item>Websites</md-list-item>
+        <md-list-item>Contact</md-list-item>
+      </md-list>
     </md-sidenav>
 
-    <mf-home-page (menuEvent)="toggleMenu($event)"></mf-home-page>
+    <mf-home-page (menuEvent)="toggleMenu()"></mf-home-page>
   </md-sidenav-container>
 </section>
-

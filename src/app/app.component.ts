@@ -15,4 +15,8 @@ export class AppComponent {
   toggleMenu() {
     this.open = !this.open;
   }
+
+  test() {
+    console.log('clicked');
+  }
 }

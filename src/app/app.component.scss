@@ -1,3 +1,22 @@
 md-sidenav {
 	width: 20vw;
 }
+
+.navHeader {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 4px
+}
+
+button {
+	width: 30px;
+	height: 30px;
+
+	md-icon {
+		padding: 4px 0;
+		line-height: 23px;
+		font-size: 20px;
+	}
+}
