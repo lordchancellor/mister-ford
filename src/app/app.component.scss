@@ -7,16 +7,45 @@ md-sidenav {
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0px 4px
+	padding: 0px 4px;
+
+	button {
+		width: 30px;
+		height: 30px;
+
+		md-icon {
+			padding: 4px 0;
+			line-height: 23px;
+			font-size: 20px;
+		}
+	}
 }
 
-button {
-	width: 30px;
-	height: 30px;
+md-list {
+	flex: 1;
+}
 
-	md-icon {
-		padding: 4px 0;
-		line-height: 23px;
-		font-size: 20px;
+.social {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	align-items: center;
+	padding: 0px 4px 10px;
+
+	.fa {
+		color: #333;
+		margin: 0px 5px;
+	}
+
+	.fa-twitter:hover {
+		color: #55acee;
+	}
+
+	.fa-github:hover {
+		color: #333333;
+	}
+
+	.fa-linkedin:hover {
+		color: #0077b5;
 	}
 }

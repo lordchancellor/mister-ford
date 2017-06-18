@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   open: boolean;
+  currentYear: number;
+
+  constructor() {
+    this.currentYear = new Date().getFullYear();
+  }
 
   ngOnInit() {
     this.open = false;
@@ -14,9 +19,5 @@ export class AppComponent {
 
   toggleMenu() {
     this.open = !this.open;
-  }
-
-  test() {
-    console.log('clicked');
   }
 }

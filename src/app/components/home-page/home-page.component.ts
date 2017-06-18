@@ -6,7 +6,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-
   @Output() menuEvent = new EventEmitter<any>();
 
   constructor() { }
