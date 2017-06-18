@@ -3,12 +3,12 @@ import { Component, OnInit } from '@angular/core';
 import { MenuEventService } from './../../services/menu-event.service';
 
 @Component({
-  selector: 'mf-home-page',
-  templateUrl: './home-page.component.html',
-  styleUrls: ['./home-page.component.scss']
+  selector: 'mf-about-page',
+  templateUrl: './about-page.component.html',
+  styleUrls: ['./about-page.component.scss']
 })
-export class HomePageComponent implements OnInit {
- 
+export class AboutPageComponent implements OnInit {
+
   constructor(private menuEventService: MenuEventService) { }
 
   ngOnInit() {

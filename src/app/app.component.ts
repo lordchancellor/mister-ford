@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+import { MenuEventService } from './services/menu-event.service';
+
 @Component({
   selector: 'mf-root',
   templateUrl: './app.component.html',
@@ -9,8 +11,10 @@ export class AppComponent {
   open: boolean;
   currentYear: number;
 
-  constructor() {
+  constructor(private menuEventService: MenuEventService) {
     this.currentYear = new Date().getFullYear();
+
+    menuEventService.changeEmitted.subscribe(() => this.toggleMenu());
   }
 
   ngOnInit() {

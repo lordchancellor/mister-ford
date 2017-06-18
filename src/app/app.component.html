@@ -11,8 +11,8 @@
       <hr>
 
       <md-list>
-        <md-list-item>Home</md-list-item>
-        <md-list-item>About</md-list-item>
+        <md-list-item><a [routerLink]="['/']" (click)="toggleMenu()">Home</a></md-list-item>
+        <md-list-item><a [routerLink]="['/about']" (click)="toggleMenu()">About</a></md-list-item>
         <md-list-item>Projects</md-list-item>
         <md-list-item>Websites</md-list-item>
         <md-list-item>Contact</md-list-item>
@@ -34,6 +34,6 @@
 
     </md-sidenav>
 
-    <mf-home-page (menuEvent)="toggleMenu()"></mf-home-page>
+    <router-outlet (menuEvent)="toggleMenu()"></router-outlet>
   </md-sidenav-container>
 </section>
